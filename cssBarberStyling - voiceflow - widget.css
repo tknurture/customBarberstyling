@@ -99,12 +99,25 @@
   box-shadow: none; /* Remove any shadows that could cause a white border effect */
 }
 
-/* Buttons inside carousel */
-.vfrc-carousel .carousel-item .button {
-  background-color: #000000; /* Set a color for the button background */
-  color: #yourButtonTextColor; /* Adjust the button text color to fit the chat background */
-  border-radius: 6px; /* Add optional rounded corners */
-  box-shadow: none; /* Remove shadows */
+/* Button inside the carousel */
+.vfrc-carousel--button {
+  background-color: #808080; /* Set button background to gray */
+  color: #ffffff; /* Set button text color to white */
+  border: none; /* Remove any borders */
+  border-radius: 6px; /* Optional: Adds rounded corners */
+  padding: 10px 20px; /* Adds padding for better button size */
+  text-align: center; /* Center the text inside the button */
+  font-size: 16px; /* Adjust the font size for readability */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  box-shadow: none; /* Remove any box shadows */
+}
+
+/* Button hover state */
+.vfrc-carousel--button:hover {
+  background-color: #696969; /* Darker gray on hover */
+  color: #ffffff; /* Keep the text white on hover */
+}
+
 }
 
 /* Images within the carousel */
