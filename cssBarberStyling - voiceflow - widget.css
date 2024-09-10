@@ -1,165 +1,84 @@
-/* General Chat Container Styling */
+/* General styling */
 .vfrc-chat {
-  background-color: #1a1a1a; /* Dark background */
-  border-radius: 20px;
-  padding: 20px;
-  color: #f5f5f5; /* Light text color */
-  font-family: Arial, sans-serif;
-}
-
-/* Assistant Messages Styling */
-.vfrc-system-response {
-  background-color: #2c2c2c;
-  color: #f5f5f5;
+  background-color: #111111; /* Dark background for the chat window */
   border-radius: 10px;
   padding: 10px;
-  margin: 10px 0;
-  border: 2px solid rgba(255, 255, 255, 0.2); /* Transparent white border */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Arial', sans-serif;
+  color: white;
 }
 
-/* User Messages Styling */
-.vfrc-user-response {
-  background-color: #333333;
-  color: #f5f5f5;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px 0;
-  border: 2px solid rgba(255, 255, 255, 0.2); /* Transparent white border */
-  text-align: right;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+/* Hide the header */
+.vfrc-header {
+  display: none;
 }
 
-/* Timestamp and Message Status */
-.vfrc-timestamp,
-.vfrc-chat--status {
-  color: #a3a3a3;
-  font-size: 12px;
-}
-
-/* Buttons (e.g., Schedule a Call) */
-.vfrc-button {
-  background-color: #000000; /* Pure black background */
-  color: #fff;
+/* Chat bubble appearance */
+.vfrc-message {
+  background-color: #222222; /* Dark gray bubble for both system and user */
   border-radius: 8px;
-  padding: 10px 15px;
-  border: 2px solid rgba(255, 255, 255, 0.2); /* Transparent white border */
-  margin-right: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  padding: 10px;
+  margin: 5px 0;
+  color: white;
+  max-width: 80%;
 }
 
-.vfrc-button:hover {
-  background-color: #333333; /* Darker gray on hover */
+/* User message style */
+.vfrc-user-response .vfrc-message {
+  background-color: #333333; /* Slightly different shade for user messages */
+  margin-left: auto; /* Align user messages to the right */
 }
 
-/* Chat Input Area Styling */
+/* Assistant (Bot) response style */
+.vfrc-system-response .vfrc-message {
+  background-color: #222222; /* Dark background for bot messages */
+  margin-right: auto;
+}
+
+/* Message buttons styling */
+.vfrc-system-response--actions .vfrc-button {
+  background-color: #444444; /* Button background */
+  color: white; /* Button text color */
+  border-radius: 6px;
+  margin: 5px;
+  padding: 8px;
+}
+
+/* Change button on hover */
+.vfrc-system-response--actions .vfrc-button:hover {
+  background-color: #555555;
+}
+
+/* Disable scrolling while bot is typing */
+.vfrc-chat--dialog {
+  overflow-y: hidden; /* Disable vertical scrolling */
+}
+
+/* Input field styling */
 .vfrc-input {
-  background-color: #2c2c2c;
-  border: 1px solid #555;
-  border-radius: 8px;
+  background-color: #222222;
+  color: white;
+  border: 1px solid #333333;
+  border-radius: 6px;
   padding: 10px;
-  color: #f5f5f5;
-  width: calc(100% - 40px);
-  margin: 10px auto;
-  display: block;
-}
-
-/* Chat Footer and Watermark */
-.vf-footer {
-  background-color: #1a1a1a;
-  padding: 20px;
-  text-align: center;
-}
-
-.vfrc-footer--watermark {
-  color: #a3a3a3;
-  font-size: 12px;
   margin-top: 10px;
 }
-/* Main carousel container */
-.vfrc-carousel {
-  background-color: transparent; /* Make the background of the carousel container transparent */
-  border: none; /* Remove any border */
-  padding: 0; /* Remove padding to ensure the images fill the space */
+
+/* Input button styling */
+.vfrc-chat-input--button {
+  background-color: #444444;
+  color: white;
+  border-radius: 6px;
+  margin-left: 10px;
+  padding: 8px;
 }
 
-/* Individual carousel items */
-.vfrc-carousel .carousel-item {
-  background-color: transparent; /* Ensure the item background is transparent */
-  border: none; /* Remove any borders */
-  padding: 0; /* Remove padding */
-  box-shadow: none; /* Remove any box shadow */
+/* Input button hover effect */
+.vfrc-chat-input--button:hover {
+  background-color: #555555;
 }
 
-/* Remove background of card-like elements inside carousel items */
-.vfrc-carousel .carousel-item .card {
-  background-color: transparent !important; /* Force background to be transparent */
-  border: none; /* Remove card borders */
-  box-shadow: none; /* Remove any shadows that could cause a white border effect */
-}
-
-/* Button inside the carousel */
-.vfrc-carousel--button {
-  background-color: #808080; /* Set button background to gray */
-  color: #ffffff; /* Set button text color to white */
-  border: none; /* Remove any borders */
-  border-radius: 6px; /* Optional: Adds rounded corners */
-  padding: 10px 20px; /* Adds padding for better button size */
-  text-align: center; /* Center the text inside the button */
-  font-size: 16px; /* Adjust the font size for readability */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  box-shadow: none; /* Remove any box shadows */
-}
-
-/* Button hover state */
-.vfrc-carousel--button:hover {
-  background-color: #696969; /* Darker gray on hover */
-  color: #ffffff; /* Keep the text white on hover */
-}
-
-}
-
-/* Images within the carousel */
-.vfrc-carousel .carousel-item img {
-  display: block; /* Ensure image is displayed as a block element */
-  max-width: 100%; /* Keep image responsive within its container */
-  height: auto; /* Maintain the image aspect ratio */
-  border-radius: 12px; /* Optional: Adds rounded corners to the image */
-}
-
-
-}
-
-.vfrc-card--header,
-.vfrc-card--description {
-  background-color: transparent; /* Transparent header and description to blend */
-  color: #f5f5f5; /* Consistent text color */
-}
-
-/* Buttons inside Carousel or Cards */
-.vfrc-system-response--actions .vfrc-button {
-  background-color: #000000; /* Black buttons to match */
-  color: #fff;
-  border-radius: 8px;
-  margin: 5px;
-  border: 2px solid rgba(255, 255, 255, 0.2); /* Transparent white border */
-}
-
-/* Chat Header */
-.vfrc-header {
-  background-color: #1a1a1a;
-  color: #f5f5f5;
-  padding: 20px;
-  border-bottom: 1px solid #333;
-}
-
-.vfrc-assistant-info--title {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.vfrc-assistant-info--description {
-  font-size: 14px;
-  color: #a3a3a3;
+/* Hide VoiceFlow watermark */
+.vfrc-footer--watermark {
+  display: none;
 }
