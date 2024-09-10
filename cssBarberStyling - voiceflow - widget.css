@@ -7,3 +7,130 @@
 .vfrc-button--primary::before {
   content: "Rezervovat"; /* Add the text "Rezervovat" */
 }
+/* General Chat Widget Style */
+.voiceflow-chat {
+    background-color: #111111; /* Dark background for the chat */
+    color: #ffffff; /* White text for contrast */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Chat Header */
+.vfrc-header {
+    background-color: #1c1c1e; /* Slightly lighter dark header */
+    color: #ffffff;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #333333; /* Border for separation */
+}
+
+/* Assistant Info in Header */
+.vfrc-assistant-info {
+    display: flex;
+    align-items: center;
+}
+
+.vfrc-assistant-info--title {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.vfrc-assistant-info--description {
+    color: #c0c0c0;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Chat Body */
+.vfrc-chat {
+    padding: 15px;
+    background-color: #111111; /* Continuation of the dark theme */
+}
+
+.vfrc-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.vfrc-system-response {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.vfrc-user-response {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: right;
+}
+
+/* Message Timestamps */
+.vfrc-timestamp {
+    font-size: 12px;
+    color: #888888;
+    margin-top: 5px;
+}
+
+/* Assistant Buttons */
+.vfrc-button {
+    background-color: #444444;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.vfrc-button:hover {
+    background-color: #555555;
+}
+
+/* Footer Input */
+.vf-footer {
+    background-color: #1c1c1e;
+    padding: 10px;
+    border-top: 1px solid #333333;
+}
+
+.vfrc-input {
+    background-color: #222222;
+    color: #ffffff;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(100% - 60px);
+    font-size: 14px;
+}
+
+.vfrc-chat-input--button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vfrc-chat-input--button:hover {
+    background-color: #0056b3;
+}
+
+/* Adjustments for embedded buttons (like "Schedule A Call") */
+.vfrc-system-response--actions .vfrc-button {
+    margin: 10px 5px;
+    background-color: #444444;
+}
+
+.vfrc-system-response--actions .vfrc-button:hover {
+    background-color: #555555;
+}
