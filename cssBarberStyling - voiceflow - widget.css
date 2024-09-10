@@ -6,6 +6,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   font-family: 'Arial', sans-serif;
   color: white;
+  overflow-y: hidden; /* Disable vertical scrolling */
 }
 
 /* Hide the header */
@@ -49,9 +50,10 @@
   background-color: #555555;
 }
 
-/* Disable scrolling while bot is typing */
+/* Completely disable auto-scrolling */
 .vfrc-chat--dialog {
-  overflow-y: hidden; /* Disable vertical scrolling */
+  overflow-y: hidden !important; /* Ensure no vertical scroll */
+  position: relative;
 }
 
 /* Input field styling */
@@ -82,3 +84,4 @@
 .vfrc-footer--watermark {
   display: none;
 }
+
