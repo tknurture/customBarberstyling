@@ -8,9 +8,24 @@
   overflow: hidden; /* Skrytí scrollbarů */
 }
 
-/* LOGO A TITULEK */
+/* ZÁHLAVÍ CHATU */
 .vfrc-header {
   display: none; /* Skrytí záhlaví */
+}
+
+/* LOGO A TITULEK */
+.vfrc-assistant-info--title {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.vfrc-assistant-info--description {
+  color: #CCCCCC;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /* KONVERZAČNÍ OBLAST (ZPRÁVY) */
@@ -22,7 +37,7 @@
   font-family: Arial, sans-serif;
 }
 
-/* TLAČÍTKO "START NEW CHAT" */
+/* TLAČÍTKO "START NEW CHAT" A ODESÍLACÍ TLAČÍTKO */
 .vfrc-button {
   background-color: #007bff; /* Modré tlačítko */
   color: white;
@@ -34,6 +49,15 @@
   margin-top: 20px;
   display: block;
   width: 100%;
+}
+
+.vfrc-chat-input--button {
+  background-color: #007bff; /* Modré tlačítko pro odeslání */
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
 }
 
 /* TEXT ZPRÁV SYSTÉMU */
