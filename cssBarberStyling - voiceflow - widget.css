@@ -1,11 +1,16 @@
 /* CELÉ CHATOVACÍ OKNO */
 .vfrc-chat--overlay {
-  background-color: rgba(0, 0, 0, 0.8); /* Poloprůhledné pozadí */
+  background-color: rgba(0, 0, 0, 0.8); /* Poloprůhledné tmavé pozadí */
   border-radius: 20px; /* Zaoblené rohy */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Průhledný světlý okraj */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Lehce průhledný světlý okraj */
   width: 400px; /* Nastavení šířky */
   height: 600px; /* Nastavení výšky */
   overflow: hidden; /* Skrytí scrollbarů */
+}
+
+/* LOGO A TITULEK */
+.vfrc-header {
+  display: none; /* Skrytí záhlaví */
 }
 
 /* KONVERZAČNÍ OBLAST (ZPRÁVY) */
@@ -15,12 +20,25 @@
   overflow-y: hidden; /* Zakázání scrollbaru */
   color: white;
   font-family: Arial, sans-serif;
-  border-radius: 20px; /* Zaoblení rohů pro vizuální koherenci */
 }
 
-/* SYSTÉMOVÉ ZPRÁVY (OD ASISTENTA) */
+/* TLAČÍTKO "START NEW CHAT" */
+.vfrc-button {
+  background-color: #007bff; /* Modré tlačítko */
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+}
+
+/* TEXT ZPRÁV SYSTÉMU */
 .vfrc-system-response {
-  background-color: rgba(255, 255, 255, 0.1); /* Poloprůhledná zpráva systému */
+  background-color: rgba(255, 255, 255, 0.1); /* Poloprůhledné systémové zprávy */
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
@@ -30,7 +48,7 @@
 
 /* ZPRÁVY OD UŽIVATELE */
 .vfrc-user-response {
-  background-color: rgba(255, 255, 255, 0.1); /* Poloprůhledná zpráva uživatele */
+  background-color: rgba(255, 255, 255, 0.1); /* Poloprůhledné zprávy od uživatele */
   border-radius: 10px;
   padding: 10px;
   font-size: 14px;
@@ -49,21 +67,17 @@
   font-family: Arial, sans-serif;
 }
 
-/* TLAČÍTKO PRO ODESLÁNÍ ZPRÁVY */
-.vfrc-chat-input--button {
-  background-color: #666666; /* Šedé tlačítko */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-}
-
 /* ODSTRANĚNÍ VODOTISKU */
 .vfrc-footer--watermark {
   display: none;
 }
 
-/* SKRYTÍ SCROLLBARU */
+/* SKRYTÍ SCROLLBARŮ */
 .vfrc-chat--dialog::-webkit-scrollbar {
   display: none;
 }
+
+.vfrc-chat--dialog {
+  scrollbar-width: none; /* Skrytí scrollbaru pro Firefox */
+}
+
