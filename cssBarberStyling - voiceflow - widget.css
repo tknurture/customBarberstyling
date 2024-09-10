@@ -101,7 +101,7 @@
 
 /* Buttons inside carousel */
 .vfrc-carousel .carousel-item .button {
-  background-color: #yourButtonColor; /* Set a color for the button background */
+  background-color: #000000; /* Set a color for the button background */
   color: #yourButtonTextColor; /* Adjust the button text color to fit the chat background */
   border-radius: 6px; /* Add optional rounded corners */
   box-shadow: none; /* Remove shadows */
