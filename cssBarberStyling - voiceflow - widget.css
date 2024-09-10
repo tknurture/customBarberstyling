@@ -52,7 +52,7 @@
 }
 
 .vfrc-chat-input--button {
-  background-color: #007bff; /* Modré tlačítko pro odeslání */
+  background-color: #C0C0C0; /* Stříbrné tlačítko pro odeslání */
   color: white;
   border-radius: 50%;
   padding: 10px;
