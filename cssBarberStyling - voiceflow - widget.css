@@ -1,87 +1,103 @@
-/* General styling */
+/* General styling for chat window */
 .vfrc-chat {
-  background-color: #111111; /* Dark background for the chat window */
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: #0f0f0f; /* Tmavší pozadí pro chat */
+  border-radius: 15px; /* Jemné zaoblení rohů */
+  padding: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Jemný stín */
   font-family: 'Arial', sans-serif;
   color: white;
-  overflow-y: hidden; /* Disable vertical scrolling */
+  max-width: 800px; /* Maximální šířka chatu */
+  margin: 0 auto; /* Centrovat na stránce */
 }
 
-/* Hide the header */
+/* Skrytí hlavičky */
 .vfrc-header {
   display: none;
 }
 
-/* Chat bubble appearance */
+/* Stylování bublin zpráv */
 .vfrc-message {
-  background-color: #222222; /* Dark gray bubble for both system and user */
-  border-radius: 8px;
-  padding: 10px;
-  margin: 5px 0;
-  color: white;
-  max-width: 80%;
+  background-color: #1f1f1f; /* Barva bublin zpráv */
+  border-radius: 12px; /* Zaoblené bubliny */
+  padding: 12px;
+  margin: 8px 0; /* Vertikální mezery mezi zprávami */
+  color: #eaeaea; /* Světlý text pro lepší čitelnost */
+  max-width: 75%; /* Zprávy zabírají maximálně 75 % šířky */
 }
 
-/* User message style */
+/* Uživatelské zprávy zarovnané vpravo */
 .vfrc-user-response .vfrc-message {
-  background-color: #333333; /* Slightly different shade for user messages */
-  margin-left: auto; /* Align user messages to the right */
+  background-color: #333333; /* Trochu odlišná barva pro uživatele */
+  margin-left: auto; /* Zprávy uživatele zarovnány doprava */
+  text-align: right; /* Text zarovnaný vpravo */
 }
 
-/* Assistant (Bot) response style */
+/* Zprávy bota zarovnané vlevo */
 .vfrc-system-response .vfrc-message {
-  background-color: #222222; /* Dark background for bot messages */
-  margin-right: auto;
+  background-color: #1a1a1a;
+  margin-right: auto; /* Zarovnání zpráv bota vlevo */
+  text-align: left;
 }
 
-/* Message buttons styling */
+/* Styling tlačítek ve zprávách */
 .vfrc-system-response--actions .vfrc-button {
-  background-color: #444444; /* Button background */
-  color: white; /* Button text color */
-  border-radius: 6px;
-  margin: 5px;
-  padding: 8px;
+  background-color: #3a3a3a; /* Tlačítka tmavší než zprávy */
+  color: white; /* Bílý text tlačítek */
+  border-radius: 8px;
+  margin: 5px 8px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-/* Change button on hover */
+/* Změna barvy tlačítka při hover */
 .vfrc-system-response--actions .vfrc-button:hover {
-  background-color: #555555;
+  background-color: #505050;
 }
 
-/* Completely disable auto-scrolling */
+/* Scroll bar styling */
 .vfrc-chat--dialog {
-  overflow-y: hidden !important; /* Ensure no vertical scroll */
-  position: relative;
+  overflow-y: auto;
+  height: 500px; /* Fixní výška chatu */
+  max-height: 500px; /* Omezit růst výšky */
+  
+  /* Skrytí scroll baru */
+  scrollbar-width: none; /* Firefox */
 }
 
-/* Input field styling */
+.vfrc-chat--dialog::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Stylování pole pro zprávu */
 .vfrc-input {
   background-color: #222222;
   color: white;
   border: 1px solid #333333;
-  border-radius: 6px;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 12px;
   margin-top: 10px;
+  width: 100%; /* Celá šířka */
+  box-sizing: border-box;
 }
 
-/* Input button styling */
+/* Tlačítko pro odeslání zprávy */
 .vfrc-chat-input--button {
-  background-color: #444444;
+  background-color: #3a3a3a;
   color: white;
-  border-radius: 6px;
+  border-radius: 8px;
   margin-left: 10px;
-  padding: 8px;
+  padding: 10px;
 }
 
-/* Input button hover effect */
+/* Tlačítko hover */
 .vfrc-chat-input--button:hover {
-  background-color: #555555;
+  background-color: #505050;
 }
 
-/* Hide VoiceFlow watermark */
+/* Skrytí watermarku VoiceFlow */
 .vfrc-footer--watermark {
   display: none;
 }
+
 
