@@ -118,30 +118,12 @@
     max-height: 100vh; /* Maximální výška je výška obrazovky */
     overflow: hidden;  /* Zabránit posouvání celého okna */
 }
-/* Customize the chat container */
-.vfrc-chat {
-    position: fixed; /* Keeps the chat in a fixed position */
-    top: 50px; /* Adjust as needed */
-    right: 50px; /* Adjust as needed */
-    width: 400px; /* Set a fixed width for the chat window */
-    height: 600px; /* Set a fixed height for the chat window */
-    border: 20px solid rgba(255, 255, 255, 0.1); /* Thick transparent border */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    background-color: #222; /* Adjust the background color inside the borders */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
-    overflow: hidden; /* Prevents content from overflowing the window */
-    z-index: 9999; /* Ensures the chat window stays on top */
-}
-
-/* Optional: Style the chat input area */
-.vfrc-input {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for input area */
-}
-
-/* Style the chat messages to fit within the fixed container */
 .vfrc-chat--dialog {
-    height: calc(100% - 80px); /* Adjust depending on the input field size */
-    overflow-y: auto; /* Allow scrolling if the content exceeds the container height */
+    height: 600px; /* Fixed height */
+    overflow-y: auto; /* Scrolling when content exceeds */
+    width: 400px; /* Optional: Adjust the width */
+    border: 20px solid rgba(255, 255, 255, 0.1); /* Transparent border */
+    position: relative;
 }
 
 
