@@ -107,6 +107,17 @@
     padding: 20px;
     overflow: hidden; /* Odstranění scrollování */
 }
+.vfrc-chat--dialog {
+    max-height: 400px; /* Nastavte pevnou výšku podle potřeby */
+    overflow-y: auto;  /* Povolit pouze vertikální scrollování v rámci okna */
+    scroll-behavior: smooth; /* Hladké scrollování při uživatelském posunu */
+}
+
+/* Zabránit překročení okna */
+.vfrc-chat--overlay {
+    max-height: 100vh; /* Maximální výška je výška obrazovky */
+    overflow: hidden;  /* Zabránit posouvání celého okna */
+}
 
 
 
