@@ -125,6 +125,13 @@
     border: 20px solid rgba(255, 255, 255, 0.1); /* Transparent border */
     position: relative;
 }
+.vfrc-chat {
+  border: 5px solid gray; /* thick gray border */
+  box-sizing: border-box; /* ensure padding and border are included in the element's width and height */
+  overflow: hidden; /* prevent scrolling */
+  max-width: 100%; /* ensure the chat fits within the available space */
+  height: 100%; /* take up full height */
+}
 
 
 
