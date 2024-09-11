@@ -1,3 +1,7 @@
 .vfrc-header {
   display: none;
 }
+.vfrc-button--primary {
+    background-color: black;
+    color: white;
+}
