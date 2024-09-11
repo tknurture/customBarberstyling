@@ -4,7 +4,7 @@
 }
 
 /* Change the start button text */
-.vfrc-launcher::before {
+.vfrc-launcher {
     content: 'Rezervovat';
 }
 
