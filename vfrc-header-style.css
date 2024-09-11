@@ -1,60 +1,112 @@
-/* Remove the header */
-.vfrc-header {
-    display: none;
-}
-
-/* Change the start button text */
-.vfrc-launcher {
-    content: 'Rezervovat';
-}
-
-/* Remove scrollbars and prevent overflow */
+/* Všeobecné stylování pro chatovací okno */
 .vfrc-chat {
-    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.85); /* Tmavé průhledné pozadí */
+    border-radius: 15px; /* Zakulacení rohů */
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Tlustá průhledná border */
+    color: white; /* Text bílý */
+    font-family: 'Arial', sans-serif; /* Minimalistický font */
+    padding: 20px;
+    overflow: hidden; /* Skrýt jakýkoliv scrollbar */
+    max-height: 100%; /* Zajišťuje, že okno se přizpůsobí výšce stránky */
 }
 
+/* Zabránění posouvání při psaní zpráv */
 .vfrc-chat--dialog {
-    overflow: hidden;
+    max-height: 100%; /* Omezit výšku dialogu na okno */
+    overflow-y: auto; /* Povolit posouvání v rámci okna */
+    scroll-behavior: smooth; /* Hladké posouvání */
 }
 
-.vfrc-message {
-    overflow: hidden;
+.vfrc-chat--spacer {
+    display: none; /* Vypnout automatické posouvání */
 }
 
-/* Optional: Add styles to ensure no scrollbars even in nested elements */
-.vfrc-system-response--list {
-    overflow: hidden;
+/* Skrytí headeru */
+.vfrc-header {
+    display: none; /* Header je skrytý */
 }
 
+/* Stylizace textových zpráv od asistenta */
+.vfrc-system-response .vfrc-message {
+    background-color: rgba(255, 255, 255, 0.1); /* Lehce průhledné šedé pozadí */
+    border-radius: 10px; /* Zakulacené rohy */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Stylizace uživatelských zpráv */
 .vfrc-user-response .vfrc-message {
-    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.2); /* Průhledné světlejší pozadí */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: right; /* Zarovnání textu uživatele doprava */
 }
 
-/* Ensure buttons match the style from the image */
+/* Stylizace tlačítek */
 .vfrc-button {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-    border: none;
+    background-color: rgba(255, 255, 255, 0.2); /* Lehce průhledná šedá tlačítka */
+    color: white; /* Bílý text */
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Průhledná hranice tlačítek */
+    padding: 10px 20px;
     border-radius: 5px;
-    padding: 10px;
     margin: 5px;
+    transition: background-color 0.3s;
 }
 
-/* Modify input styles (like the message bar at the bottom) */
-.vfrc-input {
-    background-color: #111;
-    color: #fff;
-    border: 1px solid #333;
+.vfrc-button:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Zvýraznění při najetí myší */
+}
+
+/* Stylizace carouselu */
+.vfrc-carousel {
+    background-color: rgba(255, 255, 255, 0.1); /* Průhledné pozadí */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.vfrc-carousel--button {
+    background-color: rgba(255, 255, 255, 0.2); /* Průhledná tlačítka v carouselu */
     border-radius: 5px;
+    color: white;
     padding: 10px;
 }
 
-/* Remove watermark */
-.vfrc-footer--watermark {
-    display: none;
+/* Stylizace cardů */
+.vfrc-card--content {
+    background-color: rgba(255, 255, 255, 0.1); /* Průhledné šedé pozadí pro card */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
 }
-.vfrc-button.vfrc-button--primary; rewrite {
-  content: "Rezervovat";
+
+.vfrc-card--header {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
 }
+
+.vfrc-card--description {
+    color: rgba(255, 255, 255, 0.7); /* Lehce šedý text pro popis */
+}
+
+/* Stylizace vstupního pole pro zprávy */
+.vfrc-input {
+    background-color: rgba(255, 255, 255, 0.1); /* Průhledné pole */
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px;
+}
+
+/* Stylizace celého widgetu */
+.vfrc-chat--overlay {
+    border-radius: 15px; /* Zakulacené rohy celé aplikace */
+    background-color: rgba(0, 0, 0, 0.85); /* Tmavé průhledné pozadí */
+    padding: 20px;
+    overflow: hidden; /* Odstranění scrollování */
+}
+
 
 
