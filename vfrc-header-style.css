@@ -53,3 +53,8 @@
 .vfrc-footer--watermark {
     display: none;
 }
+/* Change the button text to 'Rezervovat' */
+.vfrc-button::after {
+  content: "Rezervovat";
+}
+
