@@ -56,4 +56,23 @@
 .vfrc-button.vfrc-button--primary {
   content: "Rezervovat";
 }
+/* Hide the "Voiceflow Assistant" text and logo */
+.vfrc-header, .vfrc-assistant-info, .vfrc-avatar {
+  display: none;
+}
+
+/* Center the button */
+body {
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  height: 100vh;            /* Full viewport height */
+  margin: 0;                /* Remove default margin */
+}
+
+/* Optionally make the button bigger */
+.vfrc-button {
+  padding: 15px 30px;       /* Increase padding for a bigger button */
+  font-size: 18px;          /* Increase font size */
+}
 
