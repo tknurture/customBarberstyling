@@ -1,7 +1,55 @@
+/* Remove the header */
 .vfrc-header {
-  display: none;
+    display: none;
 }
-.vfrc-button--primary {
-    background-color: black;
-    color: white;
+
+/* Change the start button text */
+.vfrc-launcher::before {
+    content: 'Rezervovat';
+}
+
+/* Remove scrollbars and prevent overflow */
+.vfrc-chat {
+    overflow: hidden;
+}
+
+.vfrc-chat--dialog {
+    overflow: hidden;
+}
+
+.vfrc-message {
+    overflow: hidden;
+}
+
+/* Optional: Add styles to ensure no scrollbars even in nested elements */
+.vfrc-system-response--list {
+    overflow: hidden;
+}
+
+.vfrc-user-response .vfrc-message {
+    overflow: hidden;
+}
+
+/* Ensure buttons match the style from the image */
+.vfrc-button {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Modify input styles (like the message bar at the bottom) */
+.vfrc-input {
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Remove watermark */
+.vfrc-footer--watermark {
+    display: none;
 }
