@@ -53,7 +53,7 @@
 .vfrc-footer--watermark {
     display: none;
 }
-.vfrc-button.vfrc-button--primary::after {
+.vfrc-button.vfrc-button--primary {
   content: "Rezervovat";
 }
 
