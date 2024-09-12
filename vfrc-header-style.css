@@ -121,7 +121,7 @@
 .vfrc-chat--dialog {
     height: 600px; /* Fixed height */
     overflow-y: none; /* Scrolling when content exceeds */
-    width: 400px; /* Optional: Adjust the width */
+    width: auto; /* Optional: Adjust the width */
     border: 20px solid rgba(255, 255, 255, 0.1); /* Transparent border */
     position: relative;
 }
