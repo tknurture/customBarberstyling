@@ -122,7 +122,7 @@
     height: 600px; /* Fixed height */
     overflow-y: none; /* Scrolling when content exceeds */
     width: auto; /* Optional: Adjust the width */
-    border: 20px solid rgba(255, 255, 255, 0.1); /* Transparent border */
+    border: none; /* Transparent border */
     position: relative;
 }
 .vfrc-chat {
