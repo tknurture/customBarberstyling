@@ -214,24 +214,26 @@
     min-height: 500px;  /* Nastaví minimální výšku na 500px */
     box-sizing: border-box;  /* Zajištění správného počítání paddingu a okrajů */
 }
-/* Pro tablety a mobilní zařízení */
-@media (max-width: 768px) {
-    .vfrc-chat {
-        width: 100%;
-        height: 80vh;  /* Výška přizpůsobená výšce viewportu */
+ /* Tablety a menší obrazovky - iframe zabere větší část obrazovky */
+@media (max-width: 1800px) {
+    .vfrc-message .c-kLDnXB iframe {
+      width: 130%;
+      height: 75vh; /* 75% výšky obrazovky */
+      border: none;
+      display: block;
+      box-sizing: border-box;
     }
-
-    .vfrc-message {
-        font-size: 14px;  /* Menší písmo pro mobilní zařízení */
+  }
+  
+  /* Mobilní zařízení - iframe zabere co největší část obrazovky */
+  @media (max-width: 1600px) {
+    .vfrc-message .c-kLDnXB iframe {
+      width: 130%;
+      height: 85vh; /* 85% výšky obrazovky pro mobilní zařízení */
+      border: none;
+      display: block;
+      box-sizing: border-box;
     }
-}
-
-@media (max-width: 480px) {
-    .vfrc-chat {
-        width: 100%;
-        height: 70vh;  /* Ještě menší výška pro telefony */
-    }
-}
-
-
+  }
+  
   
