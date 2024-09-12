@@ -1,0 +1,187 @@
+/* Všeobecné stylování pro chatovací okno */
+.vfrc-chat {
+    background-color: black; /* Tmavé průhledné pozadí */
+    border-radius: 15px; /* Zakulacení rohů */
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Tlustá průhledná border */
+    color: white; /* Text bílý */
+    font-family: 'Arial', sans-serif; /* Minimalistický font */
+    padding: 20px;
+    overflow: hidden; /* Skrýt jakýkoliv scrollbar */
+    max-height: 100%; /* Zajišťuje, že okno se přizpůsobí výšce stránky */
+}
+
+/* Zabránění posouvání při psaní zpráv */
+.vfrc-chat--dialog {
+    max-height: 100%; /* Omezit výšku dialogu na okno */
+    overflow-y: auto; /* Povolit posouvání v rámci okna */
+    scroll-behavior: smooth; /* Hladké posouvání */
+}
+
+.vfrc-chat--spacer {
+    display: none; /* Vypnout automatické posouvání */
+}
+
+/* Skrytí headeru */
+.vfrc-header {
+    display: none; /* Header je skrytý */
+}
+
+/* Stylizace textových zpráv od asistenta */
+.vfrc-system-response .vfrc-message {
+    background-color: rgba(255, 255, 255, 0.1); /* Lehce průhledné šedé pozadí */
+    border-radius: 10px; /* Zakulacené rohy */
+    padding: 10px;
+    margin: 10px 0;
+    color: white; /* Nastavení bílé barvy textu */
+}
+
+/* Stylizace uživatelských zpráv */
+.vfrc-user-response .vfrc-message {
+    background-color: white; /* Bílé pozadí */
+    color: black; /* Černý text */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: right; /* Zarovnání textu uživatele doprava */
+}
+
+/* Stylizace tlačítek */
+.vfrc-button {
+    background-color: rgba(255, 255, 255, 0.2); /* Lehce průhledná šedá tlačítka */
+    color: white; /* Bílý text */
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Průhledná hranice tlačítek */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.vfrc-button:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Zvýraznění při najetí myší */
+}
+
+/* Stylizace carouselu */
+.vfrc-carousel {
+    background-color: rgba(0, 0, 0, 0.63); /* Průhledné pozadí */
+    border-radius: 1px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.vfrc-carousel--button {
+    background-color: transparent; /* Remove background */
+    border: none; /* Remove any existing border */
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px transparent; /* Create the right-pointing arrow */
+    padding: 0; /* Remove padding */
+}
+
+
+/* Stylizace cardů */
+.vfrc-card--content {
+    background-color: rgba(0, 0, 0, 0.63); /* Průhledné šedé pozadí pro card */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.vfrc-card--header {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.vfrc-card--description {
+    color: rgba(2, 2, 2, 0.7); /* Lehce šedý text pro popis */
+}
+
+/* Stylizace vstupního pole pro zprávy */
+.vfrc-input {
+    background-color: rgba(255, 255, 255, 0.1); /* Průhledné pole */
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px;
+}
+
+/* Stylizace celého widgetu */
+.vfrc-chat--overlay {
+    border-radius: 15px; /* Zakulacené rohy celé aplikace */
+    background-color: rgba(0, 0, 0, 0.85); /* Tmavé průhledné pozadí */
+    padding: 20px;
+    overflow: hidden; /* Odstranění scrollování */
+}
+.vfrc-chat--dialog {
+    max-height: 400px; /* Nastavte pevnou výšku podle potřeby */
+    overflow-y: auto;  /* Povolit pouze vertikální scrollování v rámci okna */
+    scroll-behavior: smooth; /* Hladké scrollování při uživatelském posunu */
+}
+
+/* Zabránit překročení okna */
+.vfrc-chat--overlay {
+    max-height: 100vh; /* Maximální výška je výška obrazovky */
+    overflow: hidden;  /* Zabránit posouvání celého okna */
+}
+.vfrc-chat--dialog {
+    height: 600px; /* Fixed height */
+    overflow-y: none; /* Scrolling when content exceeds */
+    width: auto; /* Optional: Adjust the width */
+    border: none; /* Transparent border */
+    position: relative;
+}
+.vfrc-chat {
+  border: 5px solid transarent; /* thick gray border */
+  box-sizing: border-box; /* ensure padding and border are included in the element's width and height */
+  overflow: hidden; /* prevent scrolling */
+  max-width: 100%; /* ensure the chat fits within the available space */
+  height: 100%; /* take up full height */
+}
+/* Remove the logo at the top */
+.vfrc-avatar, .vfrc-icon {
+    display: none; /* This will hide the logo or avatar */
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column; /* This will stack the image and button vertically */
+    align-items: center; /* This centers the content */
+}
+
+. {
+    position: relative; /* Ensures the button is positioned relative to the carousel item */
+    margin-top: 10px; /* Adds space between the image and the button */
+    width: auto; /* Adjusts the width as needed */
+}
+.vfrc-assistant-info--title {
+    display: none;
+}
+.c-dzcdPv.vfrc-button.c-jjMiVY.vfrc-button--primary.c-bXTvXv.c-bXTvXv-lckiv-type-info {
+    background-color: rgba(0, 0, 0, 0.63);  /* Nastavení černého pozadí */
+    color: white;  /* Nastavení bílého textu */
+}
+.vfrc-card.c-jUajGf {
+    background-color: black;  /* Černé pozadí */
+    color: white;  /* Bílý text pro všechny prvky uvnitř */
+    border: 1px solid white;  /* Tenký bílý okraj */
+}
+
+.vfrc-card--description {
+    color: white;  /* Bílá barva pro text popisu */
+}
+.vfrc-system-response--list.c-iTxaCK:has(iframe) {
+    width: 100%;  /* Zajistí 100% šířku, když je iframe přítomen */
+    height: auto;  /* Výška bude automaticky přizpůsobena obsahu */
+}
+.c-kLDnXB iframe {
+    width: 100%;  /* Iframe zabere 100% šířky */
+    height: auto;  /* Automaticky přizpůsobí výšku obsahu */
+    min-height: 500px;  /* Nastaví minimální výšku na 500px */
+    box-sizing: border-box;  /* Zajištění správného počítání paddingu a okrajů */
+}
+
+
+
+  
