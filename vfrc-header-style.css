@@ -32,6 +32,7 @@
     border-radius: 10px; /* Zakulacené rohy */
     padding: 10px;
     margin: 10px 0;
+    color: white; /* Nastavení bílé barvy textu */
 }
 
 /* Stylizace uživatelských zpráv */
