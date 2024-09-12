@@ -137,7 +137,7 @@
     display: none; /* This will hide the logo or avatar */
 }
 /* Center the "Start New Chat" button */
-.c-dzcdPv.vfrc-button.c-jjMiVY.vfrc-button--primary {
+.vfrc-button--primary {
     display: flex;
     justify-content: center;
     align-items: center;
