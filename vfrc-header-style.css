@@ -62,14 +62,14 @@
 
 /* Stylizace carouselu */
 .vfrc-carousel {
-    background-color: rgba(255, 255, 255, 0.1); /* Průhledné pozadí */
+    background-color: rgba(60, 60, 60); /* Průhledné pozadí */
     border-radius: 10px;
     padding: 10px;
     margin: 10px 0;
 }
 
 .vfrc-carousel--button {
-    background-color: rgba(255, 255, 255, 0.2); /* Průhledná tlačítka v carouselu */
+    background-color: rgba(210, 210, 210); /* Průhledná tlačítka v carouselu */
     border-radius: 5px;
     color: white;
     padding: 10px;
@@ -148,22 +148,6 @@
     padding: 10px 20px; /* Vložit padding pro lepší vzhled */
     text-align: center; /* Zarovnat text do středu */
     z-index: 10;        /* Zajistit, že tlačítko bude nad ostatním obsahem */
-}
-/* Customize carousel buttons */
-.vfrc-carousel--button {
-    background-color: black;    /* Černé pozadí */
-    color: white;               /* Bílý text */
-    border: 2px solid #d3d3d3;  /* Bílé nebo šedé ohraničení (použití světle šedé barvy) */
-    padding: 10px 20px;         /* Padding pro lepší vzhled */
-    border-radius: 5px;         /* Zaoblené rohy pro modernější vzhled */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Jemná animace změny barev */
-}
-
-/* Add hover effect for carousel buttons */
-.vfrc-carousel--button:hover {
-    background-color: white;    /* Bílé pozadí při najetí */
-    color: black;               /* Černý text při najetí */
-    border: 2px solid black;    /* Černé ohraničení při najetí */
 }
 
 
