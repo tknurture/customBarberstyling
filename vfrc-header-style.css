@@ -37,7 +37,8 @@
 
 /* Stylizace uživatelských zpráv */
 .vfrc-user-response .vfrc-message {
-    background-color: rgba(255, 255, 255, 0.2); /* Průhledné světlejší pozadí */
+    background-color: white; /* Bílé pozadí */
+    color: black; /* Černý text */
     border-radius: 10px;
     padding: 10px;
     margin: 10px 0;
