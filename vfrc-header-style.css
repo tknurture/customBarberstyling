@@ -150,6 +150,10 @@
     padding: 10px 20px; /* Přidáme padding pro lepší vzhled */
     text-align: center; /* Zarovnání textu uprostřed */
 }
-
+/* Center the "Start New Chat" button inside the chat window */
+.c-dzcdPv.vfrc-button.c-jjMiVY.vfrc-button--primary {
+    position: relative;
+    margin: 0 auto; /* Zarovná tlačítko horizontálně */
+}
 
 
