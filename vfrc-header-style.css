@@ -136,24 +136,15 @@
 .vfrc-avatar, .vfrc-icon {
     display: none; /* This will hide the logo or avatar */
 }
-/* Center the "Start New Chat" button */
-.c-dzcdPv.vfrc-button.c-jjMiVY.vfrc-button--primary {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    width: 200px; /* Nastavení pevné šířky tlačítka */
-    height: auto; /* Ujistíme se, že výška je automatická */
-    padding: 10px 20px; /* Přidáme padding pro lepší vzhled */
-    text-align: center; /* Zarovnání textu uprostřed */
-}
 /* Center the "Start New Chat" button inside the chat window */
 .c-dzcdPv.vfrc-button.c-jjMiVY.vfrc-button--primary {
-    position: relative;
-    margin: 0 auto; /* Zarovná tlačítko horizontálně */
+    position: absolute; /* Absolutní pozice */
+    top: 50%;           /* Vertikálně zarovnat do středu */
+    left: 50%;          /* Horizontálně zarovnat do středu */
+    transform: translate(-50%, -50%); /* Přesunout o polovinu šířky a výšky tlačítka */
+    width: 200px;       /* Pevná šířka tlačítka */
+    padding: 10px 20px; /* Padding pro lepší vzhled */
+    text-align: center; /* Zarovnání textu do středu */
 }
 
 
