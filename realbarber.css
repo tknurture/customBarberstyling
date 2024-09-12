@@ -67,17 +67,50 @@
     padding: 10px;
     margin: 10px 0;
 }
-
+/* Simple carousel button */
 .vfrc-carousel--button {
-    background-color: transparent; /* Remove background */
-    border: none; /* Remove any existing border */
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px transparent; /* Create the right-pointing arrow */
-    padding: 0; /* Remove padding */
-}
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #000000; /* Primary blue color */
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .vfrc-carousel--button:before {
+    content: '←'; /* Right arrow icon */
+    font-size: 22px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .vfrc-carousel--button {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .vfrc-carousel--button:before {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .vfrc-carousel--button {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .vfrc-carousel--button:before {
+      font-size: 18px;
+    }
+  }
+  
+  
 
 
 /* Stylizace cardů */
