@@ -143,9 +143,9 @@
     position: absolute; /* Absolutní pozice vzhledem k rodiči */
     top: 50%;           /* Vertikální zarovnání na 50% výšky rodiče */
     left: 50%;          /* Horizontální zarovnání na 50% šířky rodiče */
-    transform: translate(50%, -50%); /* Přesunutí přesně doprostřed */
+    transform: translate(50%, 50%); /* Přesunutí přesně doprostřed */
     width: 200px;       /* Nastavení pevné šířky tlačítka */
-    padding: 10px -20px; /* Vložit padding pro lepší vzhled */
+    padding: 40px 20px; /* Vložit padding pro lepší vzhled */
     text-align: center; /* Zarovnat text do středu */
     z-index: 10;        /* Zajistit, že tlačítko bude nad ostatním obsahem */
 }
