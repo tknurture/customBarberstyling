@@ -137,7 +137,7 @@
     display: none; /* This will hide the logo or avatar */
 }
 /* Center the "Start New Chat" button */
-.vfrc-button--primary {
+.c-dzcdPv.vfrc-button.c-jjMiVY.vfrc-button--primary {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,6 +145,10 @@
     bottom: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
+    width: 200px; /* Nastavení pevné šířky tlačítka */
+    height: auto; /* Ujistíme se, že výška je automatická */
+    padding: 10px 20px; /* Přidáme padding pro lepší vzhled */
+    text-align: center; /* Zarovnání textu uprostřed */
 }
 
 
