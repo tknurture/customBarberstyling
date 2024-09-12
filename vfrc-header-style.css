@@ -147,5 +147,21 @@
     text-align: center; /* Zarovnat text do středu */
     z-index: 10;        /* Zajistit, že tlačítko bude nad ostatním obsahem */
 }
+/* Customize carousel buttons */
+.vfrc-carousel--button {
+    background-color: black;    /* Černé pozadí */
+    color: white;               /* Bílý text */
+    border: 2px solid #d3d3d3;  /* Bílé nebo šedé ohraničení (použití světle šedé barvy) */
+    padding: 10px 20px;         /* Padding pro lepší vzhled */
+    border-radius: 5px;         /* Zaoblené rohy pro modernější vzhled */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Jemná animace změny barev */
+}
+
+/* Add hover effect for carousel buttons */
+.vfrc-carousel--button:hover {
+    background-color: white;    /* Bílé pozadí při najetí */
+    color: black;               /* Černý text při najetí */
+    border: 2px solid black;    /* Černé ohraničení při najetí */
+}
 
 
