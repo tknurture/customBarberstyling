@@ -63,7 +63,7 @@
 /* Stylizace carouselu */
 .vfrc-carousel {
     background-color: rgba(60, 60, 60); /* Průhledné pozadí */
-    border-radius: 10px;
+    border-radius: 1px;
     padding: 10px;
     margin: 10px 0;
 }
