@@ -132,6 +132,20 @@
   max-width: 100%; /* ensure the chat fits within the available space */
   height: 100%; /* take up full height */
 }
+/* Remove the logo at the top */
+.vfrc-avatar, .vfrc-icon {
+    display: none; /* This will hide the logo or avatar */
+}
+/* Center the "Start New Chat" button */
+.c-dzcdPv.vfrc-button.c-jjMiVY.vfrc-button--primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
 
 
 
