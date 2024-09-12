@@ -126,7 +126,7 @@
     position: relative;
 }
 .vfrc-chat {
-  border: 5px solid gray; /* thick gray border */
+  border: 5px solid transarent; /* thick gray border */
   box-sizing: border-box; /* ensure padding and border are included in the element's width and height */
   overflow: hidden; /* prevent scrolling */
   max-width: 100%; /* ensure the chat fits within the available space */
