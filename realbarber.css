@@ -181,7 +181,24 @@
     min-height: 500px;  /* Nastaví minimální výšku na 500px */
     box-sizing: border-box;  /* Zajištění správného počítání paddingu a okrajů */
 }
+/* Pro tablety a mobilní zařízení */
+@media (max-width: 768px) {
+    .vfrc-chat {
+        width: 100%;
+        height: 80vh;  /* Výška přizpůsobená výšce viewportu */
+    }
 
+    .vfrc-message {
+        font-size: 14px;  /* Menší písmo pro mobilní zařízení */
+    }
+}
+
+@media (max-width: 480px) {
+    .vfrc-chat {
+        width: 100%;
+        height: 70vh;  /* Ještě menší výška pro telefony */
+    }
+}
 
 
   
