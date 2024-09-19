@@ -7,7 +7,7 @@
     font-family: 'Arial', sans-serif; /* Minimalistický font */
     padding: 20px;
     overflow: hidden; /* Skrýt jakýkoliv scrollbar */
-    max-height: 100%; /* Zajišťuje, že okno se přizpůsobí výšce stránky */
+    max-height: 100vh; /* Zajišťuje, že okno se přizpůsobí výšce stránky */
 }
 
 /* Zabránění posouvání při psaní zpráv */
@@ -25,7 +25,7 @@
 .vfrc-header {
     display: none; /* Header je skrytý */
 }
-
+ 
 /* Stylizace textových zpráv od asistenta */
 .vfrc-system-response .vfrc-message {
     background-color: rgba(255, 255, 255, 0.1); /* Lehce průhledné šedé pozadí */
@@ -148,7 +148,7 @@
     overflow: hidden; /* Odstranění scrollování */
 }
 .vfrc-chat--dialog {
-    max-height: 400px; /* Nastavte pevnou výšku podle potřeby */
+    max-height: 100vh; /* Nastavte pevnou výšku podle potřeby */
     overflow-y: auto;  /* Povolit pouze vertikální scrollování v rámci okna */
     scroll-behavior: smooth; /* Hladké scrollování při uživatelském posunu */
 }
@@ -159,7 +159,7 @@
     overflow: hidden;  /* Zabránit posouvání celého okna */
 }
 .vfrc-chat--dialog {
-    height: 600px; /* Fixed height */
+    height: 100vh; /* Fixed height */
     overflow-y: none; /* Scrolling when content exceeds */
     width: auto; /* Optional: Adjust the width */
     border: none; /* Transparent border */
