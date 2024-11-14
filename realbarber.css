@@ -170,7 +170,7 @@
   box-sizing: border-box; /* ensure padding and border are included in the element's width and height */
   overflow: hidden; /* prevent scrolling */
   max-width: 100%; /* ensure the chat fits within the available space */
-  height: 100%; /* take up full height */
+  height: 100vh; /* take up full height */
 }
 /* Remove the logo at the top */
 .vfrc-avatar, .vfrc-icon {
